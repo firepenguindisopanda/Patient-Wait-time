@@ -1,3 +1,4 @@
+#Definition of PatientData variables
 class PatientData:
     def __init__(self, key, value, value2):
         self.key = key
@@ -6,7 +7,7 @@ class PatientData:
 
     def __repr__(self):
         return f'PatientData({self.key}, {self.value}, {self.value2})'
-
+#Definition of DoctorData variables
 class DoctorData:
     def __init__(self, key, value):
         self.key = key
@@ -26,6 +27,7 @@ def right_child(i):
 def swap(arr, i ,j):
     arr[i], arr[j] = arr[j], arr[i]
 
+#Definition of Heap object varaibles and methods
 class Heap:
     def __init__(self):
         self.n = 0
@@ -112,6 +114,7 @@ class Heap:
             curr = curr_child
             child_one = left_child(curr)
 
+#Runner code to find the average wait time
 def main():
     filename = 'data.txt'
     filename_two = 'solution.txt'
